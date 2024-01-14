@@ -1,0 +1,50 @@
+@use "../utils/variables";
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero_img {
+        width: 100%;
+        max-height: 225px;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(70%);
+    }
+
+    .hero_title {
+
+        display: flex;
+        position: absolute;
+
+        .title {
+            font-size: 48px;
+            font-weight: 500;
+            color: variables.$white;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        margin: 0 20px;
+
+        .hero_img {
+            max-height: 135px;
+            border-radius: 10px;
+        }
+
+        .hero_title {
+            display: block;
+            left: 40px;
+
+            .title {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+
+    }
+}
