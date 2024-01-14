@@ -1,0 +1,17 @@
+@use "../utils/variables";
+
+footer {
+  background-color: variables.$black;
+  color: variables.$white;
+  padding: 60px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    padding: 60px 0;
+  }
+}
