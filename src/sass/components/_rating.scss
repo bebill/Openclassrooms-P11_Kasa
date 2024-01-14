@@ -1,0 +1,20 @@
+@use "../utils/variables";
+
+.rating span {
+    color: variables.$darkgrey;
+}
+
+.rating span.filled {
+    color: variables.$primary;
+}
+
+.rating i {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+.rating i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+}
