@@ -23,7 +23,7 @@ root.render(
         <Route path="/" element={<Home assets={logements} />} />
         <Route path="/about" element={<About />} />
         <Route path="/asset/:id" element={<Asset />} />
-        <Route path="*" element={<Error404 />} /> {/* Route wildcard pour les URL non définies */}
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
     </Router>
