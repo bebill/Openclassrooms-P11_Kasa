@@ -1,8 +1,8 @@
 import "./sass/main.scss";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 import * as logements from "./assets/logements.json";
 
 import { Header } from "./layout/Header";
