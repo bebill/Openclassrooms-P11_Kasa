@@ -1,0 +1,57 @@
+@use "../utils/variables";
+
+main {
+    margin: 0 100px;
+    -webkit-animation: fade-in 1s ease-in-out 0.2s both;
+    animation: fade-in 1s ease-in-out 0.2s both;
+}
+
+.gallery {
+    padding: 50px;
+    margin: 50px 0;
+    background-color: variables.$lightgrey;
+    border-radius: 25px;
+}
+
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    .gallery {
+        padding: 0;
+        margin: 25px 20px;
+        background-color: transparent;
+    }
+}
+
