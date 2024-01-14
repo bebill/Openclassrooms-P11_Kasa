@@ -1,0 +1,137 @@
+@use "../utils/variables";
+
+.asset-presentation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .asset-information-article {
+
+        h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+
+            li {
+                background-color: variables.$primary;
+                color: variables.$white;
+                list-style: none;
+                margin-right: 10px;
+                border-radius: 10px;
+                padding: 5px 30px;
+            }
+        }
+    }
+
+    .asset-information-aside {
+        .asset-host {
+            display: flex;
+            align-items: center;
+            width: 170px;
+
+            p {
+                text-align: end;
+                margin: 0;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+
+        .asset-rating {
+            text-align: end;
+            margin-top: 20px;
+        }
+    }
+}
+
+.asset-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 75px;
+    margin-bottom: 50px;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .asset {
+        margin: 0 20px;
+
+        .asset-presentation {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+
+            .asset-information-article {
+                h2 {
+                    font-size: 18px;
+                    margin: revert;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                ul {
+                    font-size: 10px;
+
+                    li {
+                        padding: 3px 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .asset-information-aside {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+
+                .asset-host {
+                    width: 100px;
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+                .asset-rating {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .asset-details {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+    }
+}
