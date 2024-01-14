@@ -1,0 +1,77 @@
+@use "../utils/variables";
+
+header {
+  margin: 0 100px;
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  li {
+    list-style: none;
+    margin-left: 57px;
+
+    a {
+      color: variables.$primary;
+      font-size: 24px;
+      text-decoration: none;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    margin: 0 20px;
+    padding: 25px 0;
+
+    img {
+      width: 145px;
+    }
+
+    nav {
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        margin-left: 24px;
+
+        a {
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+
+  }
+}
