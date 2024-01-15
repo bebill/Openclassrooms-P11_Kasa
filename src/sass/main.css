@@ -380,7 +380,7 @@ main {
   margin-top: 30px;
 }
 .asset-presentation .asset-information-article h2 {
-  font-size: 36px;
+  font-size: 34px;
   margin: 0;
 }
 .asset-presentation .asset-information-article p {
@@ -401,7 +401,7 @@ main {
 .asset-presentation .asset-information-aside .asset-host {
   display: flex;
   align-items: center;
-  width: 170px;
+  width: 150px;
 }
 .asset-presentation .asset-information-aside .asset-host p {
   text-align: end;
