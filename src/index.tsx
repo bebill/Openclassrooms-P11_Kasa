@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router basename="/Openclassrooms-P11_Kasa">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home assets={logements} />} />
