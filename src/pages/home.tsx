@@ -12,8 +12,8 @@ export const Home = ({ assets }: { assets: iAssetCard[] }) => {
           alt="Entête page d'accueil"
         />
         <div className="hero_title">
-        <h1 className="title">Chez vous,&nbsp;</h1>
-        <h1 className="title">partout et ailleurs</h1>
+          <h1 className="title">Chez vous,&nbsp;</h1>
+          <h1 className="title">partout et ailleurs</h1>
         </div>
       </section>
 

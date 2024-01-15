@@ -8,15 +8,15 @@ export const Gallery = ({ images }: GalleryProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   if (images.length <= 1) {
@@ -37,7 +37,6 @@ export const Gallery = ({ images }: GalleryProps) => {
         className="asset-cover_img"
         src={images[currentIndex]}
         alt={`Galerie ${currentIndex + 1}`}
-        
       />
 
       <div className="controls">

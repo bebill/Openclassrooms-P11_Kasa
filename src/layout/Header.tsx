@@ -4,7 +4,10 @@ export const Header = () => {
   return (
     <header>
       <Link to="/">
-        <img src={`${process.env.PUBLIC_URL}/logo_header.svg`} alt="Logo Kasa Header" />
+        <img
+          src={`${process.env.PUBLIC_URL}/logo_header.svg`}
+          alt="Logo Kasa Header"
+        />
       </Link>
 
       <nav>
