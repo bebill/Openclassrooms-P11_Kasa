@@ -29,13 +29,17 @@ export const Asset = () => {
 
         <div className="asset-presentation">
           <article className="asset-information-article">
-            <h2>{assetData.title}</h2>
-            <p>{assetData.location}</p>
-            <ul className="asset-tags">
-              {assetData?.tags.map((tag, index) => (
-                <li key={index}>{tag}</li>
-              ))}
-            </ul>
+            <div className="asset-title">
+              <h2>{assetData.title}</h2>
+              <p>{assetData.location}</p>
+            </div>
+            <div className="asset-tags">
+              <ul>
+                {assetData?.tags.map((tag, index) => (
+                  <li key={index}>{tag}</li>
+                ))}
+              </ul>
+            </div>
           </article>
 
           <aside className="asset-information-aside">
