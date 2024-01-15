@@ -6,7 +6,7 @@ export const About = () => {
       <section className="hero">
         <img
           className="hero_img"
-          src="/hero_about.png"
+          src={`${process.env.PUBLIC_URL}/hero_about.png`}
           alt="Entête page à propos"
         />
       </section>

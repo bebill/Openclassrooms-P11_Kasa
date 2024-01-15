@@ -8,7 +8,7 @@ export const Home = ({ assets }: { assets: iAssetCard[] }) => {
       <section className="hero">
         <img
           className="hero_img"
-          src="/hero_home.png"
+          src={`${process.env.PUBLIC_URL}/hero_home.png`}
           alt="Entête page d'accueil"
         />
         <div className="hero_title">
