@@ -1,7 +1,7 @@
 import "./sass/main.scss";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import * as logements from "./assets/logements.json";
 
@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/Openclassrooms-P11_Kasa">
       <Header />
       <Routes>
         <Route path="/" element={<Home assets={logements} />} />
