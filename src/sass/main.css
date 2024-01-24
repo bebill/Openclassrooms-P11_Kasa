@@ -26,6 +26,7 @@ a {
 .asset-card-cover {
   height: 100%;
   border-radius: 10px;
+  background-color: #FF6060;
 }
 .asset-card-cover:hover {
   transition: 0.5s;

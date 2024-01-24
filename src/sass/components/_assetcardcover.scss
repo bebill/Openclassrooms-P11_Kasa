@@ -7,6 +7,7 @@ a {
 .asset-card-cover {
     height: 100%;
     border-radius: 10px;
+    background-color: variables.$primary;
 
     &:hover {
         transition: .5s;
