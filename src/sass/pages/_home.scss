@@ -2,6 +2,7 @@
 
 main {
     margin: 0 100px;
+    min-height: 100vh;
     -webkit-animation: fade-in 1s ease-in-out 0.2s both;
     animation: fade-in 1s ease-in-out 0.2s both;
 }
@@ -38,7 +39,7 @@ main {
     main {
         max-width: 1200px;
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 

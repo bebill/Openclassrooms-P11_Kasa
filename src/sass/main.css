@@ -16,7 +16,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100VH;
   }
 }
 a {
@@ -93,6 +92,7 @@ button {
 }
 button:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .collapsible-content {
@@ -241,7 +241,7 @@ nav li:hover {
   header {
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 992px) {
@@ -325,6 +325,7 @@ footer {
 }
 main {
   margin: 0 100px;
+  min-height: 100vh;
   animation: fade-in 1s ease-in-out 0.2s both;
 }
 
@@ -346,7 +347,7 @@ main {
   main {
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 992px) {
